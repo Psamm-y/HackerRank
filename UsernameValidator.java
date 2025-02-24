@@ -23,8 +23,13 @@ public class UsernameValidator {
     public boolean alphanumeric(Object text){
     return text instanceof String;
     }
+    public boolean alphanumeric(Integer value){
+        return value instanceof Integer;
+    }
     public static void main (String[] args){
         UsernameValidator uv = new UsernameValidator();
+        System.out.println(uv.alphanumeric("Samuel"));
         System.out.println(uv.alphanumeric(23));
+
     }
 }
