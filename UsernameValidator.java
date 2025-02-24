@@ -20,8 +20,12 @@ public class UsernameValidator {
         }
         return booleanResult;
     }
+    public boolean alphanumeric(String text){
+        boolean boolenResult= false;
+        if ()
+    }
     public static void main (String[] args){
         UsernameValidator uv = new UsernameValidator();
-      
+
     }
 }
