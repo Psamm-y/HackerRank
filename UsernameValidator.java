@@ -16,12 +16,12 @@ public class UsernameValidator {
     public boolean characters(String text){
         boolean booleanResult= false;
         if (text.length()<30 && text.length()>8){
+            booleanResult= true;
         }
-        return true;
+        return booleanResult;
     }
     public static void main (String[] args){
         UsernameValidator uv = new UsernameValidator();
-        boolean result = uv.characters("");
-        System.out.println(result);
+      
     }
 }
