@@ -1,5 +1,7 @@
 package HackerRank;
 
+import java.util.Scanner;
+
 public class UsernameValidator {
    /* You are updating the username policy on your company's internal networking platform.
    According to the policy, a username is considered valid if all the following constraints are satisfied:
@@ -11,4 +13,7 @@ public class UsernameValidator {
      uppercase characters , and digits .
     The first character of the username must be an alphabetic character,
     i.e., either lowercase character  or uppercase character .*/
+    public static final String regularExpression=null;
+    Scanner scan = new Scanner(System.in);
+
 }
