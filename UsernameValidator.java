@@ -13,7 +13,7 @@ public class UsernameValidator {
      uppercase characters , and digits .
     The first character of the username must be an alphabetic character,
     i.e., either lowercase character  or uppercase character .*/
-    public static final String regularExpression=null;
-    Scanner scan = new Scanner(System.in);
-
+    public boolean characters(String text){
+        if (text.length()<30 && text.length())
+    }
 }
