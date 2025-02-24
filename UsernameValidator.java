@@ -14,6 +14,11 @@ public class UsernameValidator {
     The first character of the username must be an alphabetic character,
     i.e., either lowercase character  or uppercase character .*/
     public boolean characters(String text){
-        if (text.length()<30 && text.length())
+        if (text.length()<30 && text.length()>8){
+        }
+        return true;
+    }
+    public static void main (String[] args){
+        
     }
 }
