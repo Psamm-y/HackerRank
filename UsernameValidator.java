@@ -1,7 +1,9 @@
 package HackerRank;
 
-import java.lang.classfile.attribute.SyntheticAttribute;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class UsernameValidator {
    /* You are updating the username policy on your company's internal networking platform.
@@ -28,10 +30,12 @@ public class UsernameValidator {
     public boolean alphanumeric(Integer value){
         return value instanceof Integer;
     }
-    public boolean alphabetic(String text){
+    public boolean alphabetic(@NotNull String text){
         return (text.startsWith("*") || text.startsWith(".")||text.startsWith("/")) ;
     }
-    public static boolean startsWith
+    public static boolean startsWithInteger(String text){
+        return Pattern.matches("^\\d+.*",text);
+    }
     public static void main (String[] args){
         UsernameValidator uv = new UsernameValidator();
         System.out.println("Please input a name");
@@ -39,6 +43,7 @@ public class UsernameValidator {
        String name = input.next().trim();
 
 
+        System.out.println(startsWithInteger("ajs"));
 
     }
 }
