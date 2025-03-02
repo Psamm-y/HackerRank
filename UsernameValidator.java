@@ -17,20 +17,20 @@ public class UsernameValidator {
      uppercase characters , and digits .
     The first character of the username must be an alphabetic character,
     i.e., either lowercase character  or uppercase character .*/
-    public boolean NumberOfCharacters(String text){
+    public static boolean NumberOfCharacters(String text){
         boolean booleanResult= false;
         if (text.length()<30 && text.length()>8){
             booleanResult= true;
         }
         return booleanResult;
     }
-    public boolean alphanumeric(Object text){
+    public static boolean alphanumeric(Object text){
     return text instanceof String;
     }
-    public boolean alphanumeric(Integer value){
+    public  static boolean alphanumeric(Integer value){
         return value instanceof Integer;
     }
-    public boolean alphabetic(@NotNull String text){
+    public static boolean alphabetic(@NotNull String text){
         return (text.startsWith("*") || text.startsWith(".")||text.startsWith("/")) ;
     }
     public static boolean startsWithInteger(String text){
@@ -42,8 +42,6 @@ public class UsernameValidator {
        Scanner input = new Scanner(System.in);
        String name = input.next().trim();
 
-
-        System.out.println(startsWithInteger("ajs"));
-
+       if(startsWithInteger())
     }
 }
