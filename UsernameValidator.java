@@ -31,12 +31,13 @@ public class UsernameValidator {
     public boolean alphabetic(String text){
         return (text.startsWith("*") || text.startsWith(".")||text.startsWith("/")) ;
     }
+    public static boolean startsWith
     public static void main (String[] args){
         UsernameValidator uv = new UsernameValidator();
         System.out.println("Please input a name");
        Scanner input = new Scanner(System.in);
        String name = input.next().trim();
-       if(uv.NumberOfCharacters(name) && uv.alphanumeric(name) && )
+
 
 
     }
