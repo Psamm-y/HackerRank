@@ -30,18 +30,19 @@ public class UsernameValidator {
     public  static boolean alphanumeric(Integer value){
         return value instanceof Integer;
     }
-    public static boolean alphabetic(@NotNull String text){
-        return (text.startsWith("*") || text.startsWith(".")||text.startsWith("/")) ;
-    }
+
     public static boolean startsWithInteger(String text){
         return Pattern.matches("^\\d+.*",text);
     }
     public static void main (String[] args){
-        UsernameValidator uv = new UsernameValidator();
-        System.out.println("Please input a name");
+        System.out.print("Please input a name:");
        Scanner input = new Scanner(System.in);
        String name = input.next().trim();
 
-       if(startsWithInteger())
+       if(startsWithInteger(name)){
+           System.out.println("Username cannot start with a number");
+       }
+
+       }
     }
 }
