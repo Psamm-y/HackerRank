@@ -1,7 +1,5 @@
 package HackerRank;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -31,6 +29,9 @@ public class UsernameValidator {
         return value instanceof Integer;
     }
 
+    public static boolean symbols(String text){
+        return Pattern.matches("^[.*/]*",text);
+    }
     public static boolean startsWithInteger(String text){
         return Pattern.matches("^\\d+.*",text);
     }
@@ -42,7 +43,9 @@ public class UsernameValidator {
        if(startsWithInteger(name)){
            System.out.println("Username cannot start with a number");
        }
+        System.out.println(symbols("sih*./"));
 
-       }
     }
+
 }
+
