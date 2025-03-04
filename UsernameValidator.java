@@ -29,9 +29,6 @@ public class UsernameValidator {
         return value instanceof Integer;
     }
 
-    public static boolean symbols(String text){
-        return Pattern.matches("^[.*/]*",text);
-    }
     public static boolean startsWithInteger(String text){
         return Pattern.matches("^\\d+.*",text);
     }
