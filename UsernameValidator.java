@@ -43,7 +43,7 @@ public class UsernameValidator {
        if(startsWithInteger(name)){
            System.out.println("Username cannot start with a number");
        }
-        System.out.println(symbols("sih*./"));
+
 
     }
 
